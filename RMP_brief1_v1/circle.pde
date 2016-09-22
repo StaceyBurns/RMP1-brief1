@@ -14,9 +14,15 @@ class Circle {
  
   xPos = random(400);
   yPos = random(400);
-  cWidth = random(50);
+  cRad = random(50);
   cRed = random(255);
   cGreen = random(255);
   cBlue = random(255);
  }
+ void paint() {
+  fill(cRed, cGreen, cBlue);
+  rect(xPos, yPos, cRad, cRad);
+  noFill();
+ }
+ 
 }

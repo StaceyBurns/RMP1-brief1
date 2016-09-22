@@ -1,9 +1,11 @@
-float[] circleA = {random(400), random(400)};
-float[] circleB = {random(400), random(400)};
-float[] circleC = {random(400), random(400)};
+Circle myCircle = new Circle();
 
-float[][] allCircles = new float [3][];
-float circleSize = random(50);
+//float[] circleA = {random(400), random(400)};
+//float[] circleB = {random(400), random(400)};
+//float[] circleC = {random(400), random(400)};
+
+float[][] allCircles = new float [50][];
+//float circleSize = random(50);
 
 void setup() {
   allCircles[0] = circleA;
