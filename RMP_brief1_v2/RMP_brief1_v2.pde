@@ -1,6 +1,6 @@
 int numCircles =20;
 Circle[] circles = new Circle[numCircles];
-
+Face myFace;
 
 void setup() {
   size(400, 400);
@@ -16,5 +16,6 @@ void draw() {
  for (int i=0; i<numCircles; i++) {
     circles[i].paint();
  }
+ myFace = new Face(mouseX, mouseY);
 
  }
