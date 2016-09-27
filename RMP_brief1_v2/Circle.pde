@@ -1,6 +1,5 @@
 class Circle {
- float x;
- float y;
+ float x, y;
  float w;
  
  float r;
@@ -8,24 +7,21 @@ class Circle {
  float b;
  
  
- Circle(float x, float y, float w) {
-
-  x = random(400);
-  y = random(400);
-  w = random(50);
-  //r = random(255);
-  //g = random(255);
-  //b = random(255);
+ Circle(float x, float y) {
+  this.x = x;
+  this.y = y;
+  w = random(10,50);
+  r = int(random(255));
+  g = int(random(255));
+  b = int(random(255));
  
  }
  
- 
  void paint() {
-  //fill(r, g, b);
+  fill(r, g, b);
   ellipse(x, y, w, w);
   noFill();
  }
  
 
-}
 }

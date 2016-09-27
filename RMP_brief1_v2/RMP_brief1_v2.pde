@@ -1,41 +1,20 @@
-Circle myCircle;
+int numCircles =20;
+Circle[] circles = new Circle[numCircles];
 
-//Circle[] allCircles = new Circle[50];
-
-//float circleSize = random(50);
 
 void setup() {
-
-  
   size(400, 400);
   background(122);
-  myCircle = new Circle();
+  for (int i=0; i<numCircles; i++) {
+   circles[i] = new Circle(random(width),random(height));
+  }
 }
 
 void draw() {
-
-
- 
-
-
- 
  background(122);
  fill(0, 50, 0);
-
-    myCircle.paint();
- // allCircles[r] = myCircle = new Circle();
-
- 
-if (keyCode == LEFT && keyPressed == true) {
-  myCircle -=5;
-}
-if (keyCode == RIGHT && keyPressed == true) {
-  myCircle +=5;
-}
-if (keyCode == DOWN && keyPressed == true) {
-  myCircle +=5;
-}
-if (keyCode == UP && keyPressed == true) {
-  myCircle -=5;
+ for (int i=0; i<numCircles; i++) {
+    circles[i].paint();
+ }
 
  }
