@@ -8,7 +8,7 @@ class Face{
  }
  
  void paint() {
-  rect(0, 0, 100, 50);
+  rect(mouseX, mouseY, 100, 85);
   fill(200);
   noFill();
  }

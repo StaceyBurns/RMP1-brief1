@@ -17,5 +17,6 @@ void draw() {
     circles[i].paint();
  }
  myFace = new Face(mouseX, mouseY);
+ myFace.paint();
 
  }
