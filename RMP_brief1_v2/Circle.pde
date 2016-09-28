@@ -1,12 +1,9 @@
 class Circle {
  float x, y;
  float w;
- 
  float r;
  float g;
  float b;
- 
- 
  Circle(float x, float y) {
   this.x = x;
   this.y = y;
@@ -14,9 +11,7 @@ class Circle {
   r = int(random(255));
   g = int(random(255));
   b = int(random(255));
- 
  }
- 
   void paint() {
     float distanceRGB = dist(x,y,mouseX,mouseY);
     if (distanceRGB < 255) { 
@@ -31,6 +26,4 @@ float distanceMove = dist(x,y,mouseX,mouseY);
        x= random(600);
        y= random(600);
     }
- 
-
   }}

@@ -5,6 +5,7 @@ Face myFace;
 void setup() {
   size(600, 600);
   background(245);
+   myFace = new Face();
   for (int i=0; i<numCircles; i++) {
    circles[i] = new Circle(random(width),random(height));
   }
@@ -29,8 +30,8 @@ if (keyCode == UP && keyPressed == true) {
 
  }
  }
- myFace = new Face(mouseX, mouseY);
- myFace.paint(0,0);
+
+ myFace.paint(mouseX, mouseY);
  
 
 
