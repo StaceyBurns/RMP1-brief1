@@ -18,15 +18,19 @@ class Circle {
  }
  
   void paint() {
-    float distance = dist(x,y,mouseX,mouseY); // distance between circle and mouse
-    if (distance < 255) { // if distance is smaller than 255
-       fill((r+distance), (g-distance), (b+distance));
-    } else { // if distance is bigger than 255
+    float distanceRGB = dist(x,y,mouseX,mouseY);
+    if (distanceRGB < 255) { 
+       fill((r+distanceRGB), (g-distanceRGB), (b+distanceRGB));
+    } else { 
    fill(r,g,b);
     }
-    ellipse(x,y,w,w); // a circle at position xy
+    ellipse(x,y,w,w);
     noFill();
-
+float distanceMove = dist(x,y,mouseX,mouseY);
+    if (distanceMove <= w/2) {
+       x= random(600);
+       y= random(600);
+    }
  
 
   }}

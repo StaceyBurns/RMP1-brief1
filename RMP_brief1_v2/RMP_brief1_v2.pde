@@ -4,14 +4,14 @@ Face myFace;
 
 void setup() {
   size(600, 600);
-  background(122);
+  background(245);
   for (int i=0; i<numCircles; i++) {
    circles[i] = new Circle(random(width),random(height));
   }
 }
 
 void draw() {
- background(122);
+ background(245);
  fill(0, 50, 0);
  for (int i=0; i<numCircles; i++) {
     circles[i].paint();
@@ -30,7 +30,7 @@ if (keyCode == UP && keyPressed == true) {
  }
  }
  myFace = new Face(mouseX, mouseY);
- myFace.paint();
+ myFace.paint(0,0);
  
 
 
