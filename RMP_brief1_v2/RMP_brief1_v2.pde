@@ -2,6 +2,7 @@ int numCircles =20;
 Circle[] circles = new Circle[numCircles]; //new circles array from circle class
 Face myFace; //myFace from face class
 
+
 void setup() {
   
   size(600, 600);
@@ -23,6 +24,7 @@ void draw() {
          circles[i].paint(); //draw circle/ call paint from circle class
          if (keyCode == LEFT && keyPressed == true) {//if left key is pressed
          circles[i].x -=5; //move circles array x-5
+         focused = true; //gives window focus to allow key press without mouse click
       }
          if (keyCode == RIGHT && keyPressed == true) {
          circles[i].x +=5;
